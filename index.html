@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Ejercicios JS</title>
+    <link
+      rel="stylesheet"
+      href="styles.css"
+    />
+  </head>
+  <body>
+    <div class="pregunta">
+      <ol>
+        <!-- pregunta 1 -->
+        <li>
+          <h4>
+            "A través de un algoritmo ayude a un usuario de Megabus a saber
+            cuántos pasajes tiene según el cupo de su tarjeta. Cada pasaje
+            cuesta $1.700 pesos.Además es importante alertar al usuario cuando
+            su cupo se encuentre con menos de 2 pasajes, se le informa que debe
+            recargar su tarjeta."
+          </h4>
+          <label for="textInput">Escriba su saldo:</label>
+          <input
+            type="number"
+            id="textInput"
+            name="inputText"
+          />
+          <button id="submitButton">Consultar</button>
+          <p id="ejer1"></p>
+        </li>
+        <hr />
+        <!-- pregunta 2 -->
+        <li>
+          <h4>
+            "Haga el algoritmo que, dada una variable cuyo valor es leído desde
+            el teclado, imprima por pantalla si el número es o no mayor que 0
+            (cero)."
+          </h4>
+          <label for="numero">Ingrese un número:</label>
+          <input
+            type="number"
+            id="numero"
+          />
+          <button onclick="verificarNumero()">Verificar</button>
+          <p id="ejer2"></p>
+        </li>
+        <hr />
+        <!-- pregunta 3 -->
+        <li>
+          <h4>
+            "Diseñe un algoritmo que, dada una variable cuyo valor es leído
+            desde el teclado, imprima por pantalla si el número es o no mayor
+            que 0 (cero), y si el número es par o impar."
+          </h4>
+          <label for="numero2">Ingrese un número:</label>
+          <input
+            type="number"
+            id="numero2"
+          />
+          <button onclick="verificarNumero2()">Verificar</button>
+          <p id="ejer3"></p>
+          <p id="ejer3_1"></p>
+        </li>
+        <!-- pregunta 4  -->
+        <hr />
+        <li>
+          <h4>
+            "Determine si un viajero de una Aerolínea puede tomar un tiquete
+            determinado en clase: Ejecutiva, Normal o Económica. Dependiendo de
+            los puntos que tenga puede tener acceso a cada clase. Más de 2000
+            puntos puede estar en Ejecutiva, entre 1000 y 1999 puede estar en
+            Normal y menos de 1000 puede estar en Económica."
+          </h4>
+          <label for="numero4">Ingrese sus puntos:</label>
+          <input
+            type="number"
+            id="numero4"
+          />
+          <button onclick="determinarClase()">Verificar</button>
+          <p id="ejer4"></p>
+        </li>
+        <hr />
+        <!-- pregunta 5 -->
+        <li>
+          <h4>
+            "Escriba un algoritmo que intercambie el valor de dos variables
+            numéricas sólo si el valor de la primera es mayor que el de la
+            segunda."
+          </h4>
+
+          <label for="numero5_1">Ingrese la primera variable:</label>
+          <input
+            type="number"
+            id="numero5_1"
+          />
+          <label for="numero5_2">Ingrese la segunda variable:</label>
+          <input
+            type="number"
+            id="numero5_2"
+          />
+          <button onclick="cambiarVariables()">cambiar</button>
+          <p id="ejer5"></p>
+        </li>
+        <hr />
+        <!-- pregunta 6 -->
+        <li>
+          <h4>
+            "Diseñe un algoritmo que calcule la nota final de un estudiante con
+            los siguientes porcentajes: primer parcial 30%, segundo parcial 30%
+            y examen final 40%. Al final determine si pudo aprobar o no la
+            asignatura. La nota mínima aprobatoria es 3.2 (Tres punto Dos). "
+          </h4>
+
+          <label for="numero6_1">Ingrese la primera nota:</label>
+          <input
+            type="number"
+            id="numero6_1"
+          />
+          <label for="numero6_2">Ingrese la segunda nota:</label>
+          <input
+            type="number"
+            id="numero6_2"
+          />
+          <label for="numero6_3">Ingrese la tercera nota:</label>
+          <input
+            type="number"
+            id="numero6_3"
+          />
+          <button onclick="calculaNota()">Enviar</button>
+          <p id="ejer6"></p>
+        </li>
+        <hr />
+        <!-- ejercicio 7  -->
+        <li>
+          <h4>
+            <p>
+              Calcule e imprima el pago mensual para un vendedor de autos,
+              basándose en lo siguiente:
+            </p>
+            <ol type="a">
+              <li>
+                El pago base es de $350, más una comisión de $15 por cada auto
+                vendido y un bono de $40 si vendió más de 15 autos.
+              </li>
+              <li>El impuesto a pagar es el 25% del pago total.</li>
+              <li>
+                Los datos de entrada son el nombre del vendedor y el número de
+                autos vendidos en el mes.
+              </li>
+              <li>
+                Se desea imprimir el nombre del vendedor, el sueldo bruto, el
+                impuesto y el sueldo neto.
+              </li>
+            </ol>
+          </h4>
+
+          <label for="vendedor">Ingrese nombre del vendedor:</label>
+          <input
+            type="text"
+            id="vendedor"
+          />
+          <label for="autos">Ingrese numero de autos vendidos:</label>
+          <input
+            type="number"
+            id="autos"
+          />
+
+          <button onclick="calculaPago()">Enviar</button>
+          <p id="ejer7"></p>
+        </li>
+        <hr />
+        <!-- ejercicio 8 -->
+        <li>
+          <h4>
+            <p>Escribir algoritmos que calculen y saquen por pantalla:</p>
+          </h4>
+          <ol type="A">
+            <!-- ejrcicio 8A -->
+            <li>
+              <h4>El máximo de tres números introducidos por teclado</h4>
+              <label for="num8a_1">Ingrese el primer numero</label>
+              <input
+                type="number"
+                id="num8a_1"
+              />
+              <label for="num8a_2">Ingrese el segundo numero</label>
+              <input
+                type="number"
+                id="num8a_2"
+              />
+              <label for="num8a_3">Ingrese el tercer numero</label>
+              <input
+                type="number"
+                id="num8a_3"
+              />
+              <button onclick="maximo()">Enviar</button>
+              <p id="ejer8a"></p>
+            </li>
+            <!-- ejrcicio 8B -->
+            <li>
+              <h4>El mínimo de tres números dados por el usuarios</h4>
+              <label for="num8b_1">Ingrese el primer numero</label>
+              <input
+                type="number"
+                id="num8b_1"
+              />
+              <label for="num8b_2">Ingrese el segundo numero</label>
+              <input
+                type="number"
+                id="num8b_2"
+              />
+              <label for="num8b_3">Ingrese el tercer numero</label>
+              <input
+                type="number"
+                id="num8b_3"
+              />
+              <button onclick="minimo()">Enviar</button>
+              <p id="ejer8b"></p>
+            </li>
+            <!-- ejrcicio 8c -->
+            <li>
+              <h4>El promedio de tres números dados por el usuario</h4>
+              <label for="num8c_1">Ingrese el primer numero</label>
+              <input
+                type="number"
+                id="num8c_1"
+              />
+              <label for="num8c_2">Ingrese el segundo numero</label>
+              <input
+                type="number"
+                id="num8c_2"
+              />
+              <label for="num8c_3">Ingrese el tercer numero</label>
+              <input
+                type="number"
+                id="num8c_3"
+              />
+              <button onclick="promedio()">Enviar</button>
+              <p id="ejer8c"></p>
+            </li>
+            <!-- ejrcicio 8d -->
+            <li>
+              <h4>
+                Determinar si una letra pulsada por el usuario es mayúscula o
+                minúscula.
+              </h4>
+              <label for="lttr">Escribe una letra</label>
+              <input
+                type="text"
+                id="lttr"
+                maxlength="1"
+                pattern="[a-zA-Z]"
+              />
+              <button onclick="whatCase()">Enviar</button>
+              <p id="ejer8d"></p>
+            </li>
+            <!-- ejrcicio 8e -->
+            <li>
+              <h4>Indique si un carácter es un digito numérico.</h4>
+              <label for="nmbr">Escribe un numero</label>
+              <input
+                type="text"
+                id="nmbr"
+              />
+              <button onclick="isANumber()">Enviar</button>
+              <p id="ejer8e"></p>
+            </li>
+          </ol>
+        </li>
+        <hr />
+        <!-- ejercicio 9 -->
+        <li>
+          <h4>
+            Diseñe un algoritmo que dada una nota (numérica) determine el estado
+            de un estudiante según la siguiente tabla: EXCELENTE: 5.0, BUENO:
+            entre 4.0 y 4.9, REGULAR: entre 3.0 y 3.9 y DEFICIENTE: entre 0 y
+            2.9.
+          </h4>
+
+          <label for="note">Ingrese la nota del estudiante</label>
+          <input
+            type="number"
+            name="note"
+            id="note"
+            min="0"
+            max="5"
+          />
+          <button onclick="estado()">Enviar</button>
+          <p id="ejer9"></p>
+        </li>
+        <hr />
+        <!-- ejercicio 10  -->
+        <li>
+          <h4>
+            Dadas las notas parciales de 3 estudiantes, calcule la nota
+            definitiva de cada uno de ellos y determine que estudiante obtuvo
+            mejor rendimiento académico y cual obtuvo el mas bajo rendimiento
+            académico.
+          </h4>
+          <label for="num10_1">nota de estudiante 1</label>
+          <input
+            type="number"
+            id="num10_1"
+          />
+          <label for="num10_2">nota de estudiante 2</label>
+          <input
+            type="number"
+            id="num10_2"
+          />
+          <label for="num10_3">nota de estudiante 3</label>
+          <input
+            type="number"
+            id="num10_3"
+          />
+          <button onclick="mejorPeor()">Enviar</button>
+          <p id="ejer10"></p>
+        </li>
+        <hr />
+        <!-- ejercicio 11 -->
+        <li>
+          <h4>
+            Escribir un algoritmo que determine el equipo en el que será
+            asignado un jugador. Se tiene como datos: nombre, cédula y edad. Y
+            se clasifica en cada equipo así: Profesionales para jugadores entre
+            25 y 40 años, aficionados entre 18 y 24 años, Novatos entre 12 y 17
+            años. Otras edades no pueden ser asignados a ningún equipo.
+          </h4>
+          <label for="nombre">Nombre</label>
+          <input
+            type="text"
+            id="nombre"
+          />
+          <label for="cedula">CC</label>
+          <input
+            type="number"
+            id="cedula"
+          />
+          <label for="edad">edad</label>
+          <input
+            type="number"
+            id="edad"
+          />
+          <button onclick="determinarEquipo()">Enviar</button>
+          <p id="ejer11"></p>
+        </li>
+        <hr />
+        <!-- ejercicio 12 -->
+        <li>
+          <h4>
+            Solicitar tres números al usuario e intercambiarlos entre si, solo
+            si el segundo es mayor que el primero y el tercero.
+          </h4>
+          <label for="numero12_1">Ingrese la primera variable:</label>
+          <input
+            type="number"
+            id="numero12_1"
+          />
+          <label for="numero12_2">Ingrese la segunda variable:</label>
+          <input
+            type="number"
+            id="numero12_2"
+          />
+          <label for="numero12_3">Ingrese la segunda variable:</label>
+          <input
+            type="number"
+            id="numero12_3"
+          />
+          <button onclick="cambiarVariable()">cambiar</button>
+          <p id="ejer12"></p>
+        </li>
+        <hr />
+        <!-- ejercicio 13 -->
+        <li>
+          <h4>
+            Para lograr ser monitor de la Universidad en las salas de sistemas,
+            los estudiantes deben obtener un promedio integral superior a 4.0 y
+            no tener antecedentes disciplinarios. Ayúdele a un estudiante a
+            saber si puede optar por ser monitor de la institución.
+          </h4>
+          <label for="antecedentes">Ha tenido antecedentes disciplinarios?</label>
+          <select
+            id="antecedentes"
+            name="antecedentes"
+          >
+            <option value="Si">Si</option>
+            <option value="No">No</option>
+          </select>
+          
+          <label for="promedio">Cual es su promedio?</label>
+          <input type="number" id="promedio" min=0 max=5>
+          <button onclick="monitor()">Enviar</button>
+          <p id="ejer13"></p>
+        </li>
+        <hr>
+        <!-- ejercicio 14 -->
+        <li>
+            <h4>
+                <p>Determinar el nivel de un empleado según las siguientes condiciones:</p>
+            <ol type="a">
+                <li>Nivel 1 si el sueldo es menor a 500 y lleva menos de 4 años en la empresa</li>
+                <li>Nivel 2 si el sueldo está entre 501 y 1000 y lleva menos de 4 años en la empresa</li>
+                <li>Nivel 3 no importa el sueldo, solo que lleve más de 10 años en la empresa</li>
+                <li>Nivel 4 para los que lleven entre 5 y 9 años en la empresa y ganen menos de 2000</li>
+                <li>Los demás están en el nivel 0</li>
+            </ol>
+        </h4>
+        
+        <label for="sueldo">Ingrese su sueldo</label>
+        <input type="number" id="sueldo" min=0>
+        <label for="tiempo">Ingrese su tiempo en la compañia (en años)</label>
+        <input type="number" id="tiempo" min=0>
+        <button onclick="nivel()">Enviar</button>
+        <p id="ejer14"></p>
+        </li>
+      </ol>
+    </div>
+  </body>
+
+  <script src="JS/eje1.js"></script>
+  <script src="JS/eje2.js "></script>
+  <script src="JS/eje3.js "></script>
+  <script src="JS/eje4.js "></script>
+  <script src="JS/eje5.js "></script>
+  <script src="JS/eje6.js "></script>
+  <script src="JS/eje7.js "></script>
+  <script src="JS/eje8.js "></script>
+  <script src="JS/eje9.js "></script>
+  <script src="JS/eje10.js "></script>
+  <script src="JS/eje11.js "></script>
+  <script src="JS/eje12.js "></script>
+  <script src="JS/eje13.js "></script>
+  <script src="JS/eje14.js "></script>
+</html>
